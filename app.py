@@ -167,7 +167,7 @@ def predict():
     # Create the response dictionary
     response = {
         "disease": disease,
-        "probability": probability,
+        "probability": float(probability),
         "description": disease_details["description"],
         "symptoms": disease_details["symptoms"],
         "treatment": disease_details["treatment"],
