@@ -2,7 +2,7 @@
 
 ![Kaggle](https://img.shields.io/badge/Dataset-Kaggle-blue.svg) ![Python 3.12](https://img.shields.io/badge/Python-3.12-brightgreen.svg) ![Scikit-Learn](https://img.shields.io/badge/Library-ScikitLearn-orange.svg)![Keras](https://img.shields.io/badge/Keras-yellow.svg)![Tensorflow](https://img.shields.io/badge/Tensorflow-cyan.svg)
 
-This repository consists of files required for end to end implementation and deployment of Deep Learning Tomato Leaf Disease Prediction web application deployed with flask.
+This repository consists of files required for end to end implementation and deployment of Deep Learning Tomato Leaf Disease Prediction API application deployed with flask you can find the Frontend here https://github.com/Tigo-cmd/CNN_Based_Tomatoe_diease_Classifier.
 
 ## Table of Contents
   * [Technologies Used](#technologies-used)
