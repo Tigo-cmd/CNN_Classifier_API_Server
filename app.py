@@ -184,4 +184,5 @@ def home():
 
 
 if __name__ == '__main__':
-    app.run(port=5001, debug=True)
+    port = int(os.environ.get('PORT', 5001))  # Default to 5001 for local development
+    app.run(host='0.0.0.0', port=port)
