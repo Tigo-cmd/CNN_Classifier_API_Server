@@ -32,6 +32,19 @@ client = TigoGroq()
 
 # ... (rest of your app.py code)
 
+@app.route('/keepalive', methods=['POST'])
+def keepAlive():
+    """ recives request and keeps api runnnig for the hosted server"""
+    if 'message' not in request.json:
+        return jsonify({"error": "No message provided"}), 400
+    
+    keepAliveMessageRequest = request.json['message']
+    try:
+        alive_response = "Up and Alive: Keeping Alive"
+        return jsonify({"response": alive_response})
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
 @app.route('/chat', methods=['POST'])
 def chat():
     """Handles chat requests and returns AI response"""
