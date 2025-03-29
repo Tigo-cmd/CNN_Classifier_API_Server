@@ -30,7 +30,6 @@ CORS(app)  # Allow all origins
 load_dotenv()
 client = TigoGroq()
 
-# ... (rest of your app.py code)
 
 @app.route('/keepalive', methods=['POST'])
 def keepAlive():
